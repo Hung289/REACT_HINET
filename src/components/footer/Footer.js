@@ -4,8 +4,8 @@ const Footer = (props) => {
     return (
         <Fragment>
             <footer>
-                <div class="container-m">
-                    <div class="footer__wrapper">
+                <div className="container-m">
+                    <div className="footer__wrapper">
                         {props.children}
                     </div>
                 </div>

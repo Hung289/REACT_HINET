@@ -26,14 +26,14 @@ const DUM_DATA = [
 const Brand = () => {
     return (
         <Fragment>
-            <section class="brand">
-                <div class="container-m">
-                    <div class="brand__wrapper">
-                        <div class="section-title mg-medium">
+            <section className="brand">
+                <div className="container-m">
+                    <div className="brand__wrapper">
+                        <div className="section-title mg-medium">
                             Essenstial Items
                         </div>
 
-                        <div class="brand__lists">
+                        <div className="brand__lists">
                             {DUM_DATA.map((item) => (
                                 <a href="!#" key={item.id}>
                                     <img src={item.image} alt={item.title} />

@@ -2193,3 +2193,7 @@ footer {
     font-size: 1.6rem;
     border: none;
 }
+
+.form-together button[type="submit"] {
+    cursor: pointer;
+}

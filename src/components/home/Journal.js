@@ -33,29 +33,29 @@ const DUM_DATA = [
 const Journal = () => {
     return (
         <Fragment>
-            <section class="journal">
-                <div class="container-m">
-                    <div class="journal__wrapper">
-                        <div class="section-title mg-medium">
+            <section className="journal">
+                <div className="container-m">
+                    <div className="journal__wrapper">
+                        <div className="section-title mg-medium">
                             Essenstial Items
                         </div>
-                        <div class="journal__items">
+                        <div className="journal__items">
                             {DUM_DATA.map((item) => (
-                                <div class="journal__item" key={item.id}>
-                                    <a href="!#" class="hover-shine">
+                                <div className="journal__item" key={item.id}>
+                                    <a href="!#" className="hover-shine">
                                         <img
                                             src={item.image}
                                             alt={item.title}
                                         />
                                     </a>
-                                    <div class="journal__content">
-                                        <div class="journal__time">
+                                    <div className="journal__content">
+                                        <div className="journal__time">
                                             {item.date}
                                         </div>
-                                        <div class="journal__title">
+                                        <div className="journal__title">
                                             <a href="!#">{item.title}</a>
                                         </div>
-                                        <div class="journal__text">
+                                        <div className="journal__text">
                                             {item.description}
                                         </div>
                                         <a href="!#">Read mode</a>

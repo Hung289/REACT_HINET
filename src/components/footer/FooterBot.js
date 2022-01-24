@@ -19,11 +19,11 @@ const DUM_DATA = [
 const FooterBot = () => {
     return (
         <Fragment>
-            <div class="footer__bottom">
-                <div class="footer__bottom-left">
+            <div className="footer__bottom">
+                <div className="footer__bottom-left">
                     2021 Furnitor. All rights reserved
                 </div>
-                <div class="footer__bottom-right">
+                <div className="footer__bottom-right">
                     <ul>
                         {DUM_DATA.map((item) => (
                             <li key={item.id}>

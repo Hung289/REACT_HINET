@@ -3,26 +3,26 @@ import { Fragment } from "react";
 const FooterTop = () => {
     return (
         <Fragment>
-            <div class="footer__top">
-                <div class="footer__new">
-                    <div class="footer__title">New Sletter</div>
+            <div className="footer__top">
+                <div className="footer__new">
+                    <div className="footer__title">New Sletter</div>
 
-                    <form action="" method="post" class="form">
+                    <form action="" method="post" className="form">
                         <input
-                            class="form__input footer__search"
+                            className="form__input footer__search"
                             type="text"
                             placeholder="Search Something"
                         />
 
-                        <div class="form__icon footer__icon">
-                            <i class="far fa-arrow-right"></i>
+                        <div className="form__icon footer__icon">
+                            <i className="far fa-arrow-right"></i>
                         </div>
                     </form>
                 </div>
 
-                <div class="footer__menu">
-                    <div class="footer__title">Menu</div>
-                    <ul class="footer-ul">
+                <div className="footer__menu">
+                    <div className="footer__title">Menu</div>
+                    <ul className="footer-ul">
                         <li>
                             <a href="!#">Seatting</a>
                         </li>
@@ -38,9 +38,9 @@ const FooterTop = () => {
                     </ul>
                 </div>
 
-                <div class="footer__about">
-                    <div class="footer__title">About</div>
-                    <ul class="footer-ul">
+                <div className="footer__about">
+                    <div className="footer__title">About</div>
+                    <ul className="footer-ul">
                         <li>
                             <a href="!#">Contact us</a>
                         </li>
@@ -56,9 +56,9 @@ const FooterTop = () => {
                     </ul>
                 </div>
 
-                <div class="footer__follow">
-                    <div class="footer__title">Follow us</div>
-                    <ul class="footer-ul">
+                <div className="footer__follow">
+                    <div className="footer__title">Follow us</div>
+                    <ul className="footer-ul">
                         <li>
                             <a href="!#">Facebook</a>
                         </li>
