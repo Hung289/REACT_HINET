@@ -2197,3 +2197,11 @@ footer {
 .form-together button[type="submit"] {
     cursor: pointer;
 }
+
+.tab-pane-m{
+    display: none;
+}
+
+.tab-pane-m.tab-active {
+    display: block;
+}

@@ -1,10 +1,22 @@
 import { Fragment, useState } from "react";
-
+import DesProduct from '../../assets/images/description-product.jpg'
+import ProductPage09 from '../../assets/images/product-page-09.jpg' 
+import Test01 from '../../assets/images/tes_01.png' 
+import Test02 from '../../assets/images/tes_02.png' 
+import Test03 from '../../assets/images/tes_03.png' 
 const ColTab = () => {
 
     const [isActive, setIsActive] = useState('description')
+    const [isReview, setIsReview] = useState(false)
+    const toggleTab = (e, tab) => {
+        e.preventDefault()
+        setIsActive(tab)
+    }
 
-    const toggleTab = () => {}
+    const toggleReview = (e) => {
+        e.preventDefault()
+        setIsReview(!isReview)
+    }
 
     return (
         <Fragment>
@@ -14,9 +26,9 @@ const ColTab = () => {
                         <li>
                             <a
                                 href="!#"
-                                className="tabLinks active"
+                                className={isActive === 'description' ? "tabLinks active" : "tabLinks"}
                                 data-var="description"
-                                onClick={toggleTab}
+                                onClick={(e) => toggleTab(e, 'description')}
                             >
                                 Description
                             </a>
@@ -24,9 +36,9 @@ const ColTab = () => {
                         <li>
                             <a
                                 href="!#"
-                                className="tabLinks"
+                                className={isActive === 'information' ? "tabLinks active" : "tabLinks"}
                                 data-var="information"
-                                onClick={toggleTab}
+                                onClick={(e) => toggleTab(e, 'information')}
                             >
                                 Information
                             </a>
@@ -34,9 +46,9 @@ const ColTab = () => {
                         <li>
                             <a
                                 href="!#"
-                                className="tabLinks"
+                                className={isActive === 'review' ? "tabLinks active" : "tabLinks"}
                                 data-var="review"
-                                onClick={toggleTab}
+                                onClick={(e) => toggleTab(e, 'review')}
                             >
                                 Review(3)
                             </a>
@@ -44,9 +56,8 @@ const ColTab = () => {
                     </ul>
 
                     <div
-                        className="tab-pane-m"
+                        className={isActive === 'description' ? 'tab-pane-m desctiption tab-active' : 'tab-pane-m desctiption'}
                         id="description"
-                        className="desctiption"
                     >
                         <div className="box-tab-pane">
                             <div
@@ -62,7 +73,7 @@ const ColTab = () => {
                             >
                                 <div className="description-img">
                                     <img
-                                        src="images/description-product.jpg"
+                                        src={DesProduct}
                                         alt=""
                                     />
                                 </div>
@@ -83,7 +94,7 @@ const ColTab = () => {
                         </div>
                     </div>
 
-                    <div className="tab-pane-m information" id="information">
+                    <div className={isActive === 'information' ? 'tab-pane-m information tab-active' : 'tab-pane-m information'} id="information">
                         <div className="box-tab-pane">
                             <div
                                 className="box-tab-pane-title"
@@ -138,7 +149,7 @@ const ColTab = () => {
                                 <div className="infomation-description">
                                     <div className="info-des-image">
                                         <img
-                                            src="images/product-page-09.jpg"
+                                            src={ProductPage09}
                                             alt=""
                                         />
                                     </div>
@@ -161,7 +172,7 @@ const ColTab = () => {
                         </div>
                     </div>
 
-                    <div className="tab-pane-m review" id="review">
+                    <div className={isActive === 'review' ? 'tab-pane-m review tab-active' : 'tab-pane-m review'} id="review">
                         <div className="tab-pane-m__wrapper">
                             <div className="box-tab-pane">
                                 <div
@@ -177,23 +188,23 @@ const ColTab = () => {
                                 >
                                     <ul className="list-star">
                                         <li>
-                                            <a href="#"></a>
+                                            <a href="!#"></a>
                                             <i className="fas fa-star"></i>
                                         </li>
                                         <li>
-                                            <a href="#"></a>
+                                            <a href="!#"></a>
                                             <i className="fas fa-star"></i>
                                         </li>
                                         <li>
-                                            <a href="#"></a>
+                                            <a href="!#"></a>
                                             <i className="fas fa-star"></i>
                                         </li>
                                         <li>
-                                            <a href="#"></a>
+                                            <a href="!#"></a>
                                             <i className="fas fa-star"></i>
                                         </li>
                                         <li>
-                                            <a href="#"></a>
+                                            <a href="!#"></a>
                                             <i className="fas fa-star"></i>
                                         </li>
                                     </ul>
@@ -206,7 +217,7 @@ const ColTab = () => {
                                     <div className="review-item">
                                         <div className="review-item-avatar">
                                             <img
-                                                src="images/tes_01.png"
+                                                src={Test01}
                                                 alt=""
                                             />
                                         </div>
@@ -260,7 +271,7 @@ const ColTab = () => {
                                     <div className="review-item">
                                         <div className="review-item-avatar">
                                             <img
-                                                src="images/tes_02.png"
+                                                src={Test02}
                                                 alt=""
                                             />
                                         </div>
@@ -314,7 +325,7 @@ const ColTab = () => {
                                     <div className="review-item">
                                         <div className="review-item-avatar">
                                             <img
-                                                src="images/tes_03.png"
+                                                src={Test03}
                                                 alt=""
                                             />
                                         </div>
@@ -366,10 +377,10 @@ const ColTab = () => {
                                     </div>
 
                                     <div className="btn-add-review">
-                                        <a href="#">Write a review</a>
+                                        <a href="!#" onClick={toggleReview}>Write a review</a>
                                     </div>
 
-                                    <div className="card-review">
+                                    <div className={isReview ? 'card-review showReview' : 'card-review'}>
                                         <div className="card-body">
                                             <div className="card-title">
                                                 Write A Review
