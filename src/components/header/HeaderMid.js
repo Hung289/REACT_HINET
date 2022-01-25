@@ -4,7 +4,11 @@ const HeaderMid = (props) => {
 
     const toggleHandlerMenuMobile = () => {
         props.onToggleMenu()
-        console.log('hihi')
+    }
+
+    const toggleHandlerCartMobile = (e) => {
+        e.preventDefault()
+        props.onToggleCart()
     }
 
     return (
@@ -55,7 +59,7 @@ const HeaderMid = (props) => {
                                     <span className="number">0</span>
                                 </li>
                                 <li className="basket-btn">
-                                    <a href="!#">
+                                    <a href="!#" onClick={toggleHandlerCartMobile}>
                                         <i className="far fa-shopping-basket"></i>
                                     </a>
                                     <span className="number">0</span>
