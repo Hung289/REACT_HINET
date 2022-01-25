@@ -4,20 +4,14 @@ import ShortLogo from '../../assets/images/short_logo.png'
 
 
 const MenuMobile = (props) => {
-
-
-    const [isShowSubMenu, setIsShowSubMenu] = useState(false)
-
+    const [isShowSubMenu, setIsShowSubMenu] = useState('home')
     const closeMenu = () => {
         props.onCloseMenu()
     }
-
-    const toggleSubMenu = (e) => {
-        console.log('hihi')
+    const toggleSubMenu = (e,data) => {
         e.preventDefault()
-        setIsShowSubMenu(!isShowSubMenu)
+        setIsShowSubMenu(data)
     }
-
     return (
         <Fragment>
             <div className={props.statusMenu ? "menu-sidebar show": "menu-sidebar"}>
@@ -35,8 +29,8 @@ const MenuMobile = (props) => {
 
                     <div className="menu-mobile-body">
                         <ul className="ul-menu-first">
-                            <li className={isShowSubMenu ? "li-menu-first show" : "li-menu-first"}>
-                                <a href="!#" aria-expanded="false"  onClick={(e) => toggleSubMenu(e)}>
+                            <li className={isShowSubMenu === 'home' ? "li-menu-first show" : "li-menu-first"}>
+                                <a href="!#" aria-expanded="false"  onClick={(e) => toggleSubMenu(e, 'home')}>
                                     Home<span className="caret"></span>
                                 </a>
                                 <ul className="ul-menu-second">
@@ -62,8 +56,8 @@ const MenuMobile = (props) => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className={isShowSubMenu ? "li-menu-first show" : "li-menu-first"}>
-                                <a href="!#" aria-expanded="false"  onClick={(e) => toggleSubMenu(e)}>
+                            <li className={isShowSubMenu === 'shop' ? "li-menu-first show" : "li-menu-first"}>
+                                <a href="!#" aria-expanded="false"  onClick={(e) => toggleSubMenu(e, 'shop')}>
                                     Shop<span className="caret"></span>
                                 </a>
                                 <ul className="ul-menu-second">
@@ -87,13 +81,13 @@ const MenuMobile = (props) => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className={isShowSubMenu ? "li-menu-first show" : "li-menu-first"}>
-                                <a href="!#" aria-expanded="false"  onClick={(e) => toggleSubMenu(e)}>
+                            <li className={isShowSubMenu === 'pages' ? "li-menu-first show" : "li-menu-first"}>
+                                <a href="!#" aria-expanded="false"  onClick={(e) => toggleSubMenu(e, 'pages')}>
                                     Pages<span className="caret"></span>
                                 </a>
                             </li>
-                            <li className={isShowSubMenu ? "li-menu-first show" : "li-menu-first"}>
-                                <a href="!#" aria-expanded="false"  onClick={(e) => toggleSubMenu(e)}>
+                            <li className={isShowSubMenu === 'contact' ? "li-menu-first show" : "li-menu-first"}>
+                                <a href="!#" aria-expanded="false"  onClick={(e) => toggleSubMenu(e,'contact')}>
                                     Contact<span className="caret"></span>
                                 </a>
                                 <ul className="ul-menu-second">
@@ -105,13 +99,13 @@ const MenuMobile = (props) => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className={isShowSubMenu ? "li-menu-first show" : "li-menu-first"}>
-                                <a href="!#" aria-expanded="false">
+                            <li className={isShowSubMenu === 'blog' ? "li-menu-first show" : "li-menu-first"}>
+                                <a href="!#" aria-expanded="false" onClick={(e) => toggleSubMenu(e, 'blog')}>
                                     Blog<span className="caret"></span>
                                 </a>
                             </li>
-                            <li className={isShowSubMenu ? "li-menu-first show" : "li-menu-first"}>
-                                <a href="!#" aria-expanded="false"  onClick={(e) => toggleSubMenu(e)}>
+                            <li className={isShowSubMenu === 'docs' ? "li-menu-first show" : "li-menu-first"}>
+                                <a href="!#" aria-expanded="false"  onClick={(e) => toggleSubMenu(e, 'docs')}>
                                     Docs<span className="caret"></span>
                                 </a>
                             </li>
