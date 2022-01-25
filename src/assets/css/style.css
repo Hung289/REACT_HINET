@@ -2205,3 +2205,7 @@ footer {
 .tab-pane-m.tab-active {
     display: block;
 }
+
+.slick-next {
+    right: 0;
+}

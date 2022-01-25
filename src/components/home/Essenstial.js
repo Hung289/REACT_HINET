@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 import Product19 from "../../assets/images/product-19.jpg";
 import Product02 from "../../assets/images/product-02.jpg";
@@ -66,7 +67,7 @@ const Essenstial = () => {
                     </div>
 
                     <div className="btn essenstial__btn">
-                        <a href="product-page.html">Shop now</a>
+                        <Link to="/shop-page">Shop now</Link>
                     </div>
                 </div>
             </section>

@@ -16,8 +16,8 @@ const LikeThis = () => {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: false,
-        slickNext: false,
-        slickPrev: false,
+        slickNext: null,
+        slickPrev: null,
         autoplaySpeed: 3000,
         cssEase: "linear",
         responsive: [
@@ -68,7 +68,7 @@ const LikeThis = () => {
 
                     <Slider {...settings}>
                         {DUM_DATA.map((el) => (
-                            <div >
+                            <div key={el.id}>
                                 <div className="card-box" key={el.id} style={{padding: '0px 10px', boxShadow:'border-box'}}>
                                     <div className="image-box"></div>
                                     <div className="info-box">

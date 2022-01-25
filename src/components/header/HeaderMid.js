@@ -1,6 +1,12 @@
 import { Fragment } from "react";
 import Logo from '../../assets/images/logo.png'    
-const HeaderMid = () => {
+const HeaderMid = (props) => {
+
+    const toggleHandlerMenuMobile = () => {
+        props.onToggleMenu()
+        console.log('hihi')
+    }
+
     return (
         <Fragment>
             <div className="header__center">
@@ -8,7 +14,7 @@ const HeaderMid = () => {
                     <div className="header__center-wrapper">
                         <div className="btn-mobile-menu">
                             <div className="btn-menu">
-                                <span className="toggle-icon"></span>
+                                <span className="toggle-icon" onClick={toggleHandlerMenuMobile}></span>
                             </div>
                         </div>
                         <div className="header__center-left">

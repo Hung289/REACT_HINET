@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-
+import {Link} from 'react-router-dom'
 const HeaderBot = () => {
     return (
         <Fragment>
@@ -8,25 +8,25 @@ const HeaderBot = () => {
                     <div className="header__stickey-wrapper">
                         <ul className="dropdown-menu-main">
                             <li>
-                                <a className="dropdown-main-link" href="!#">
+                                <Link className="dropdown-main-link" to="/">
                                     Home{" "}
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu">
                                     <li className="dropdown-item">
-                                        <a
+                                        <Link
                                             className="dropdown-link"
-                                            href="product-page.html"
+                                            to="/product-detail"
                                         >
                                             Product-page
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="dropdown-item">
-                                        <a
+                                        <Link
                                             className="dropdown-link"
-                                            href="shop-page.html"
+                                            to="/shop-page"
                                         >
                                             Shop-page
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="dropdown-item">
                                         <a

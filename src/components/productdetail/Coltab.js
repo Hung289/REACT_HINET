@@ -188,23 +188,23 @@ const ColTab = () => {
                                 >
                                     <ul className="list-star">
                                         <li>
-                                            <a href="!#"></a>
+                                            <a href="!#">{""}</a>
                                             <i className="fas fa-star"></i>
                                         </li>
                                         <li>
-                                            <a href="!#"></a>
+                                            <a href="!#">{""}</a>
                                             <i className="fas fa-star"></i>
                                         </li>
                                         <li>
-                                            <a href="!#"></a>
+                                            <a href="!#">{""}</a>
                                             <i className="fas fa-star"></i>
                                         </li>
                                         <li>
-                                            <a href="!#"></a>
+                                            <a href="!#">{""}</a>
                                             <i className="fas fa-star"></i>
                                         </li>
                                         <li>
-                                            <a href="!#"></a>
+                                            <a href="!#">{""}</a>
                                             <i className="fas fa-star"></i>
                                         </li>
                                     </ul>
@@ -226,23 +226,23 @@ const ColTab = () => {
                                             <div className="star-time">
                                                 <ul className="list-star">
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                 </ul>
@@ -280,23 +280,23 @@ const ColTab = () => {
                                             <div className="star-time">
                                                 <ul className="list-star">
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                 </ul>
@@ -334,23 +334,23 @@ const ColTab = () => {
                                             <div className="star-time">
                                                 <ul className="list-star">
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                     <li>
-                                                        <a href="#"></a>
+                                                        <a href="!#">{""}</a>
                                                         <i className="fas fa-star"></i>
                                                     </li>
                                                 </ul>
